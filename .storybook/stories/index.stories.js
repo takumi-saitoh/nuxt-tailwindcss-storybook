@@ -8,6 +8,7 @@ import '@/assets/css/tailwind.css'
 
 import MyButton from './MyButton';
 import Welcome from './Welcome';
+import Logo from '@/components/Logo.vue'
 
 storiesOf('Welcome', module).add('to Storybook', () => ({
   components: { Welcome },
@@ -33,3 +34,9 @@ storiesOf('Button', module)
     template: '<my-button @click="action">😀 😎 👍 💯</my-button>',
     methods: { action: action('clicked') },
   }));
+
+  storiesOf('Logo', module)
+    .add('logo', () => ({
+      components: { Logo },
+      template: `<logo />`
+    }))
