@@ -16,7 +16,7 @@ export default {
   },
 
   template: `
-    <button :style="buttonStyles" @click="onClick">
+    <button class="w-full text-blue-700" :style="buttonStyles" @click="onClick">
       <slot></slot>
     </button>
   `,

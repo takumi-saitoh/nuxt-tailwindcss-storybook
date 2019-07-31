@@ -1,9 +1,12 @@
-import { configure } from '@storybook/vue';
+import { configure } from '@storybook/vue'
+
+import '@/assets/css/tailwind.css'
 
 // automatically import all files ending in *.stories.js
-const req = require.context('../stories', true, /\.stories\.js$/);
+const req = require.context('./stories', true, /\.stories\.js$/)
+
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStories, module);
+configure(loadStories, module)
