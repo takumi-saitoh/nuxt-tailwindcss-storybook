@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "nuxt": "^2.8.1"
+    "nuxt": "^3.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
